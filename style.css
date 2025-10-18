@@ -102,3 +102,34 @@ button[onclick^="editar"]:hover {
 button[onclick^="excluir"]:hover {
   background-color: #c82333;
 }
+
+#relatorios h2 {
+  margin: 0 0 10px 0;
+}
+
+.acoes-relatorios {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.acoes-relatorios button {
+  background: #0ea5e9;
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 6px;
+}
+.acoes-relatorios button:hover { background: #0284c7; }
+
+.card-relatorio {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.06);
+}
+.card-relatorio h3 {
+  margin: 0 0 8px 0;
+}
+
