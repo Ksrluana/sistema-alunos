@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DevTech Academy — Relatórios</title>
+  <link rel="stylesheet" href="./CSS/bootstrap.min.css" />
+
+  <style>
+    :root {
+      --tema: #7aa7b2;
+    }
+
+    body {
+      background: #f7f9fb;
+    }
+
+    .navbar {
+      background: var(--tema) !important;
+    }
+    .navbar .navbar-brand,
+    .navbar .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+    }
+
+    h2 {
+      color: #2b3a3f;
+      font-weight: 700;
+    }
+
+    .card {
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    }
+
+    .card-header {
+      background: rgba(122, 167, 178, 0.15);
+      font-weight: 600;
+      color: #2b3a3f;
+    }
+
+    .card-body p,
+    .card-body li {
+      color: #46585d;
+    }
+
+    footer {
+      color: #6b7f85;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="./indice.html">DevTech Academy</a>
+      <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div id="menu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./cadastro.html">Cadastro</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./relatorio.html">Relatórios</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTEÚDO -->
+  <main class="container py-5">
+    <h2 class="text-center mb-4">Relatórios dos Alunos</h2>
+    <p class="text-center text-muted mb-5">
+      Os relatórios são atualizados automaticamente ao abrir esta página.
+    </p>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">Aprovados (nota ≥ 7)</div>
+          <div class="card-body">
+            <ul id="relAprovados"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">Média das Notas</div>
+          <div class="card-body">
+            <p id="relMediaNotas" class="fs-5 fw-bold">-</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">Média das Idades</div>
+          <div class="card-body">
+            <p id="relMediaIdades" class="fs-5 fw-bold">-</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card h-100">
+          <div class="card-header">Nomes em Ordem Alfabética</div>
+          <div class="card-body">
+            <ul id="relNomesOrdem"></ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="card h-100">
+          <div class="card-header">Quantidade de Alunos por Curso</div>
+          <div class="card-body">
+            <ul id="relQtdPorCurso"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center mt-5 small">
+      <hr />
+      <p class="mb-0">DevTech Academy • Sistema de Gestão de Alunos</p>
+    </footer>
+  </main>
+
+  <!-- Scripts -->
+  <script src="./js.aluno/core.js"></script>
+  <script src="./js.aluno/pagina-relatorios-aluno.js"></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
